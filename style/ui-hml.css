@@ -1,0 +1,149 @@
+/*
+ * @Author:wlf(at)zhishan-iot.ga
+ */
+
+* {
+    font-family: OpenSans-Regular;
+}
+
+a,em {
+    font-family: Consola;
+}
+
+div {
+	word-wrap:break-word;
+	word-break:break-all;
+}
+
+h1 {
+    font-family: Ostrich Black;
+}
+
+h2,h3 {
+    font-family: Ostrich Regular;
+}
+
+
+p {
+    font-size: 16px;
+}
+
+
+.btn-md {
+	color: #ffffff;
+	border: 1px solid rgba(255,255,255,0.6);
+	text-decoration: none;
+	min-width: 160px;
+	height: 40px;
+	margin-top: 10px;
+	min-height: 30px;
+	display: inline-table;
+	text-align: center;
+	transition: all ease-in 0.2s;
+	
+    font-family: OpenSans-Regular;
+	font-size: 13px;
+    font-weight: bolder;
+	line-height: 18px;
+	
+	box-sizing: border-box;
+
+	vertical-align: middle;
+	text-transform: uppercase;
+	padding: 10px 10px 1px 10px;
+	-moz-box-sizing: border-box;
+	opacity: 1;
+}
+
+.btn-md:active {
+	color:black;
+	background-color:white;
+	text-decoration:none;
+	border: 1px solid rgba(0,0,0,0.6);
+}
+
+.btn-md:link {
+	color:white;
+	text-decoration:none;
+	border: 1px solid rgba(255,255,255,0.6);
+}
+
+.btn-md:hover {
+	color:black;
+	background-color:white;
+	text-decoration:none;
+	border: 1px solid rgba(0,0,0,0.6);
+}
+
+.btn-md:visited {
+	color:white;
+	text-decoration:none;
+	border: 1px solid rgba(255,255,255,0.6);
+}
+
+.footer-content {
+    color:#878B91;
+    font-family: Consola;
+	font-size: 14px;
+    margin-top: 25px;
+	margin-bottom: 20px;
+}
+
+.footer-title {
+		color:#DDD;
+		font-size:16px;
+		font-weight: 300;
+		line-height: 16px;
+		margin:40px 0 30px 34px;	
+}
+
+.footer-wrap-plus {
+	background-color: #373f48;
+    margin-top: 80px;
+}
+
+.h3-secondary-text {
+	color: #777;
+	font-family: Ostrich Regular;
+}
+
+.jumbotron-background {
+    color: #FFFFFF;
+    background-image: url('/image/0007.jpg');
+    background-position: 0% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.jumbotron-button {
+    font-family: OpenSans-Regular;
+}
+
+.jumbotron-content {
+    font-family: Ostrich Regular;
+}
+
+.member-info {
+	font-family: Consola;
+}
+
+#scrollUp {
+    background-color: #777;
+    border: medium none;
+    bottom: 100px;
+    color: #eee;
+    font-size: 40px;
+    height: 46px;
+    line-height: 1;
+    opacity: 0.8;
+    overflow: hidden;
+    right: 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 46px;
+}
+
+#scrollUp:hover {
+    background-color: #333;
+}
+

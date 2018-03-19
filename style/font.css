@@ -1,0 +1,33 @@
+/*
+  @Author:wlf(at)zhishan-iot.ga
+  @Dessciption:font style sheet
+ */
+
+@font-face
+{
+  font-family: Consola;
+  font-style: normal;
+  src: url('/style/font/consola.ttf');
+}
+
+@font-face
+{
+  font-family: OpenSans-Regular;
+  font-style: normal;
+  src: url('/style/font/OpenSans-Regular.ttf');
+}
+
+@font-face
+{
+  font-family: Ostrich Black;
+  font-style: normal;
+  src: url('/style/font/Ostrich Black.ttf');
+}
+
+@font-face
+{
+  font-family: Ostrich Regular;
+  font-style: normal;
+  src: url('/style/font/Ostrich Black.ttf');
+}
+
