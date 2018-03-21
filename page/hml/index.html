@@ -75,7 +75,7 @@
 
             <!-- title -->
             <h1>HML - Hardware Middle Layer</h1>
-            <h4>Page update at 2018-03-19</h4>
+            <h4>Page update at 2018-03-21</h4>
 
             <!-- social button -->
             <div class="row">
@@ -106,23 +106,25 @@
                 <p>HML is a lite and easy-use firmware library & BSP set for some MCUs and boards,such as 8051 and STC89 series MCUs now(refer to <a href="#support-list">support-list</a> for details).It coded with C language and compiled by <a href="http://sdcc.sourceforge.net/">SDCC</a> compiler.HML aimed to provide a bridge from originality to hardware,help people develop more quickly.Besides,we found there is lack of application examples about SDCC on the Internet,even if SDCC is free and high-efficiency.So we decide to code HML to exploit the field and share our experience.HML opens all source files on <a href="https://github.com">GitHub</a>.Welcome advice from you!</p>
             </div>
 
+            <!-- #Support-list -->
             <div>
                 <div id="support-list" class="page-header">
                     <h2>What MCU or board is being supported by HML now?</h2>                    
                 </div>
-                <p>The lastest code of HML is <strong>v0.0.0</strong>,and the following is support list of current version and related component in HML:</p>
+                <p>The lastest version code of HML is <strong>v0.0.0 (beta)</strong>,and the followings is support list of current version and related component in HML:</p>
                 <ul class="list-group">
-                    <li class="list-group-item active">MCU<a class="pull-right" href="#component-list" style="color:white">corresponding component</a></li>
+                    <li class="list-group-item active">MCU<a class="pull-right" href="#component-list" style="color:white" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="jump to component list">corresponding component</a></li>
                     <li class="list-group-item">Intel MCS-51 based microprocessors (8031, 8032, 8051, 8052, etc.)</li>
                     <li class="list-group-item">STC micro STC89 series (STC89C52RC, STC89C54RD, etc.)</li>
-                    <li class="list-group-item active">BOARD <a class="pull-right" href="#component-list" style="color:white">corresponding component</a></li>
+                    <li class="list-group-item active">BOARD <a class="pull-right" href="#component-list" style="color:white" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="jump to component list">corresponding component</a></li>
                     <li class="list-group-item">...</li>
                 </ul>
             </div>
 
+            <!-- #Component-list -->
             <div>
                 <div id="component-list" class="page-header">
-                    <h2>What components inside HML now?</h2>                    
+                    <h2>What components are inside HML now?</h2>                    
                 </div>
                     <table class="table table-bordered table-hover table-responsive">
                         <thead>
@@ -157,12 +159,13 @@
                     <h2>How to start?</h2>
                 </div>
 
-                <h3>STEP-1 <small class="h3-secondary-text">requierd-environment and tools</small></h3>
+                <h3 class="step-title">STEP-1 <small class="h3-secondary-text">requierd-environment and tools</small></h3>
                 <p>You need some prepartions about configuring tools before using HML.</p>
                 <p>Firstly,you need <strong>a computer with fitted operation system</strong>.HML is known to compile from the source code on the following platforms:
                     <ul class="list-group">
                         <li class="list-group-item">Microsoft Windows - x86</li>
                         <li class="list-group-item">Microsoft Windows - x86_64</li>
+                        <li class="list-group-item">Linux - x86_64</li>
                         <li class="list-group-item">Rasbian (Debian for Raspberry Pi) - ARMv6</li>
                     </ul>
                 </p>
@@ -174,7 +177,7 @@
                     <div class="panel-body">Users may need to configure environment variable of SDCC manually!</div>
                 </div>
 
-                <h3>STEP-2 <small class="h3-secondary-text">get start with HML</small></h3>
+                <h3 class="step-title">STEP-2 <small class="h3-secondary-text">get start with HML</small></h3>
                 <p>In the beginning of this step,you need to know the file structment of HML.Every HML component has similar structment,there may be few subtle distinctions amony them.Now we take HML_FwLib_8051 for example.</p>
                 <div class="panel panel-default">
                     <div class="panel-heading"><span class="glyphicon glyphicon-folder-open" aria-hidden="true" style="margin-right: 10px"></span>File structment of HML_FwLib_8051</div>
@@ -182,11 +185,11 @@
                         <div>
                             <p style="font-family: Consola">
                                 HML_FwLib_8051</br>
-                                ├── user</br>
-                                ├── src</br>
-                                ├── sample</br>
-                                ├── obj</br>
                                 ├── inc</br>
+                                ├── obj</br>
+                                ├── sample</br>
+                                ├── src</br>
+                                ├── user</br>
                                 └── errormap.txt</br>
                             </p>
                         </div>
@@ -237,7 +240,7 @@
                 <p>There are two ways to start your project with HML,they are #QuickStart and #Custom.</p>
                 <p><strong>QuickStart</strong>: user just need modify code in <em>test.c</em>,and use default makefile,then it will comlete all work.After makefile script complete compiling,it will show these information like following image.If you computer support beeper,the script will enable the beeper to notify you all works are completed,and you can disable this function by delete related line in script file.</p>
                 <a href="/image/hml/screenshot-20180319002.jpg"><img src="/image/hml/screenshot-20180319002.jpg" class="img-rounded img-responsive"></img></a></br>
-                <p><strong>Custom</strong>: if you have enough ability or want to do more things,you can just get <em>inc</em> and <em>src</em> folder and wirte your own makefile.</p>
+                <p><strong>Custom</strong>: if you have enough abilities or want to do more things,you can just add <em>inc</em> and <em>src</em> folders into your project and write your own makefile.</p>
 
             </div>
 
@@ -250,7 +253,7 @@
                 <table class="table table-hover table-striped">
                     <tbody>
                         <tr>
-                            <td class="member-info">Jiabin Xu</td>
+                            <td class="member-info">Jiabin Hsu</td>
                             <td class="member-info">zsiothsu(at)zhishan-iot.ga</td>
                         </tr>
                         <tr>
@@ -258,7 +261,7 @@
                             <td class="member-info">wlf(at)zhishan-iot.ga</td>
                         </tr>
                     </tbody>
-                </table> 
+                </table>
             </div>
 
             <div>
@@ -302,7 +305,7 @@
         <!-- footer -->
         <footer class="container-fluid foot-wrap footer-wrap-plus">
             <p align="center" class="footer-content">
-                Code with <span class="glyphicon glyphicon-heart" style="color:#FF0033" aria-hidden="true"></span> in Chiangchow</br>
+                Code with <span class="glyphicon glyphicon-heart" style="color:#FF0033" aria-hidden="true"></span> in <span data-toggle="popover" data-trigger="hover" title="What is Chiangchow?" data-content="A city with delicious SIGUOTANG" tabindex="0" style="font-family: Consola">Chiangchow</span></br>
                 Copyright &copy;2018 ZHISHAN-IoT | Webmaster:<a href="mailto:webmaster@zhishan-iot.ga" style="color:#878B91">webmaster@zhishan-iot.ga</a>
             </p>
         </footer>
@@ -316,13 +319,13 @@
         <script>
             $(function(){
                 $.scrollUp({
-                    scrollName:'scrollUp',  //element ID
+                    scrollName:'scrollUp',  // element ID
                     topDistance:'300',      // distance from top element(px)
                     topSpeed:700,           // speed of returning top(ms)
                     animation:'fade',       // fade, slide, none
                     animationInSpeed:200,
                     animationOutSpeed:200,
-                    scrollText:'<i class="fa fa-angle-up"></i>',     //text content
+                    scrollText:'<i class="fa fa-angle-up"></i>',     // text content
                     activeOverlay:false,
                 });
                 $(window).scroll(function() {
@@ -339,6 +342,35 @@
                 $.scrollUp();
             });
         </script> 
+
+
+        <!-- script for popover -->
+        <script>
+            $(document).ready(function() {
+                $(function () {
+                    $('[data-toggle="popover"]').popover();
+                });
+            }); 
+        </script>
+        <!-- script for tooltip -->
+        <script>
+            $(document).ready(function() {
+                $(function () {
+                    $('[data-toggle="tooltip"]').tooltip();
+                });
+            }); 
+        </script>
+
+        <!-- Baidu Tongji -->
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?b1bbb96a9a3aa490445a38bec4d1fa05";
+                var s = document.getElementsByTagName("script")[0]; 
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
     </body>
 
 </html>

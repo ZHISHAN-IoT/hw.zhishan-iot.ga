@@ -15,11 +15,24 @@
 	
 	<body>
         <div class="container" style="margin-top: 50px">
-            <p>HML is jumping to download page after 3 seconds...</p>
+            <p>HML will jump to download page after 3 seconds...</p>
         </div>
+
+        <!-- Baidu Tongji -->
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?b1bbb96a9a3aa490445a38bec4d1fa05";
+                var s = document.getElementsByTagName("script")[0]; 
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+
+        <!-- jump script -->
 		<script language='javascript'>
             function jump() {
-                document.location = '/index.html'
+                document.location = 'https://github.com/ZHISHAN-IoT/HML'
             }
             setTimeout(jump,3000);
         </script>
