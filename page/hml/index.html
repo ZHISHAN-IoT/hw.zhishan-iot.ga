@@ -23,8 +23,7 @@
     <body style="margin-top:40px">
 
 
-		<div class="container">
-        
+		<div class="container">   
 			<nav class="navbar navbar-inverse navbar-fixed-top navbar-expand navbar-dark flex-column flex-md-row bd-navbar">			
 				<a class="navbar-brand" href="https://zhishan-iot.ga" style="margin-left: 20px" target="_blank">ZHISHAN-IoT</a>
 						
@@ -45,7 +44,7 @@
 						<li class="nav-item na-link"><a href="download.html">Download</a></li>
 						<li class="nav-item na-link dropdown">
 							<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>   
-								<ul class="dropdown-menu navbar-inverse" aria-labelledby="dropdown01">
+								<ul class="dropdown-menu navbar-inverse" aria-labelledby="navbarNavDropdown">
 									<li><a class="dropdown-item" style="color:#9d9d9d" href ="/index.html">Hardware</a></li>
 									<li><a class="dropdown-item" style="color:#9d9d9d" href ="#">Hardware - HML</a></li>
                                     <li class="divider"></li>
@@ -64,7 +63,7 @@
          <div class="jumbotron jumbotron-background">
              <div class="container">
                 <h1>HML</h1>
-                <p class="jumbotron-content ">Hardware Middle Layer</br>
+                <p class="jumbotron-content ">Hardware Middle Layer<br>
                 provide a layer between hardware and originality</p>
                 <a class="pull-right btn btn-md jumbotron-button" href="#page-start" role="button">get started</a>
              </div>
@@ -75,7 +74,7 @@
 
             <!-- title -->
             <h1>HML - Hardware Middle Layer</h1>
-            <h4>Page update at 2018-03-21</h4>
+            <h4>Page update at 2018-03-28</h4>
 
             <!-- social button -->
             <div class="row">
@@ -111,7 +110,7 @@
                 <div id="support-list" class="page-header">
                     <h2>What MCU or board is being supported by HML now?</h2>                    
                 </div>
-                <p>The lastest version code of HML is <strong>v0.0.0 (beta)</strong>,and the followings is support list of current version and related component in HML:</p>
+                <p>The lastest version code of HML is <strong>v0.0.0</strong>,and the followings is support list of current version and related component in HML:</p>
                 <ul class="list-group">
                     <li class="list-group-item active">MCU<a class="pull-right" href="#component-list" style="color:white" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="jump to component list">corresponding component</a></li>
                     <li class="list-group-item">Intel MCS-51 based microprocessors (8031, 8032, 8051, 8052, etc.)</li>
@@ -128,22 +127,26 @@
                 </div>
                     <table class="table table-bordered table-hover table-responsive">
                         <thead>
-                            <th class="info">FwLib Name</th>
-                            <th class="info">Support object</th>
+                            <tr>
+                                <th class="info">FwLib Name</th>
+                                <th class="info">Support object</th>
+                            </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td><a href="download.html">HML_FwLib_8051</a></td>
                                 <td>Intel MCS-51 based microprocessors (8031, 8032, 8051, 8052, etc.)</td>
                             </tr>
-                           <tr>
+                            <tr>
                                 <td><a href="download.html">HML_FwLib_STC89</a></td>
                                 <td>STC micro STC89 series (STC89C52RC, STC89C54RD, etc.)</td>
                             </tr>
                         </tbody>
                         <thead>
-                            <th class="info">BSP Name</th>
-                            <th class="info">Support object</th>
+                            <tr>
+                                <th class="info">BSP Name</th>
+                                <th class="info">Support object</th>
+                            </tr>
                         </thead>
                         <tbody>
                             <tr>
@@ -161,17 +164,16 @@
 
                 <h3 class="step-title">STEP-1 <small class="h3-secondary-text">requierd-environment and tools</small></h3>
                 <p>You need some prepartions about configuring tools before using HML.</p>
-                <p>Firstly,you need <strong>a computer with fitted operation system</strong>.HML is known to compile from the source code on the following platforms:
-                    <ul class="list-group">
-                        <li class="list-group-item">Microsoft Windows - x86</li>
-                        <li class="list-group-item">Microsoft Windows - x86_64</li>
-                        <li class="list-group-item">Linux - x86_64</li>
-                        <li class="list-group-item">Rasbian (Debian for Raspberry Pi) - ARMv6</li>
-                    </ul>
-                </p>
+                <p>Firstly,you need <strong>a computer with fitted operation system</strong>.HML is known to compile from the source code on the following platforms:</p>
+                <ul class="list-group">
+                    <li class="list-group-item">Linux - x86_64</li>
+                    <li class="list-group-item">Microsoft Windows - x86</li>
+                    <li class="list-group-item">Microsoft Windows - x86_64</li>
+                    <li class="list-group-item">Rasbian (Debian for Raspberry Pi) - ARMv6</li>
+                </ul>
                 <p>In fact,it may be Ok on other platforms as long as it can run SDCC.However,we don't have such conditions to verify.If run HML successfully on the other platforms,you can tell us via <a href="mailto:mcu@zhishan-iot.ga">mcu@zhishan-iot.ga</a>.</p>
                 <p>Secondly,<strong>install the lastest version of <a href="http://sdcc.sourceforge.net/">SDCC</a> according to your OS and refer to <a href="#support-list">support-list</a> to download component of HML which is fitted with your MCU or board.</strong>In order to make sure that SDCC has been installed rightly,users of Linux need to enter <kbd>sdcc --version</kbd> in terminal;and users of Windows need enter the same code in cmd.exe.Then if it shows version information of SDCC like following screenshot,it means all is Ok!</p>
-                <img src="/image/hml/screenshot-20180319001.jpg" class="img-responsive img-rounded"></img></br>
+                <img src="/image/hml/screenshot-20180319001.jpg" alt="screenshot-20180319001.jpg" class="img-responsive img-rounded"><br>
                 <div class="panel panel-info">
                     <div class="panel-heading"><h3 class="panel-title">Note for users of Windows</h3></div>
                     <div class="panel-body">Users may need to configure environment variable of SDCC manually!</div>
@@ -184,21 +186,23 @@
                     <div class="panel-body">
                         <div>
                             <p style="font-family: Consola">
-                                HML_FwLib_8051</br>
-                                ├── inc</br>
-                                ├── obj</br>
-                                ├── sample</br>
-                                ├── src</br>
-                                ├── user</br>
-                                └── errormap.txt</br>
+                                HML_FwLib_8051<br>
+                                ├── inc<br>
+                                ├── obj<br>
+                                ├── sample<br>
+                                ├── src<br>
+                                ├── user<br>
+                                └── errormap.txt<br>
                             </p>
                         </div>
                         <div>The tree shows the structment of HML_FwLib_8051,it includes inc,obj,sample,src,test folders and errormap.txt.Details about them show in the following form.</div>
                     </div>
                     <table class="table table-bordered table-hover table-responsive">
                         <thead>
-                            <th>Name</th>
-                            <th>Description</th>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </tr>
                         </thead>
                         <tbody>
                             <tr>
@@ -228,10 +232,10 @@
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td colspan="4">
-                                    #Note:</br>
-                                    &nbsp;*makefile's name are all added platform-name in the end for different platforms,such as makefile_win_x64</br>
-                                    &nbsp;*default name of the source file with main function in user folder is <em style="font-family: Consola">test.c</em></br>
+                                <td colspan="2">
+                                    #Note:<br>
+                                    &nbsp;*makefile's name are all added platform-name in the end for different platforms,such as makefile_win_x64<br>
+                                    &nbsp;*default name of the source file with main function in user folder is <em style="font-family: Consola">test.c</em><br>
                                 </td>
                             </tr>
                         </tfoot>
@@ -239,7 +243,7 @@
                 </div>
                 <p>There are two ways to start your project with HML,they are #QuickStart and #Custom.</p>
                 <p><strong>QuickStart</strong>: user just need modify code in <em>test.c</em>,and use default makefile,then it will comlete all work.After makefile script complete compiling,it will show these information like following image.If you computer support beeper,the script will enable the beeper to notify you all works are completed,and you can disable this function by delete related line in script file.</p>
-                <a href="/image/hml/screenshot-20180319002.jpg"><img src="/image/hml/screenshot-20180319002.jpg" class="img-rounded img-responsive"></img></a></br>
+                <a href="/image/hml/screenshot-20180319002.jpg"><img src="/image/hml/screenshot-20180319002.jpg" alt="screenshot-20180319002.jpg" class="img-rounded img-responsive"></a><br>
                 <p><strong>Custom</strong>: if you have enough abilities or want to do more things,you can just add <em>inc</em> and <em>src</em> folders into your project and write your own makefile.</p>
 
             </div>
@@ -304,8 +308,8 @@
 
         <!-- footer -->
         <footer class="container-fluid foot-wrap footer-wrap-plus">
-            <p align="center" class="footer-content">
-                Code with <span class="glyphicon glyphicon-heart" style="color:#FF0033" aria-hidden="true"></span> in <span data-toggle="popover" data-trigger="hover" title="What is Chiangchow?" data-content="A city with delicious SIGUOTANG" tabindex="0" style="font-family: Consola">Chiangchow</span></br>
+            <p class="footer-content" style="text-align: center">
+                Code with <span class="glyphicon glyphicon-heart" style="color:#FF0033" aria-hidden="true"></span> in <span data-toggle="popover" data-trigger="hover" title="What is Chiangchow?" data-content="A city with delicious SIGUOTANG" tabindex="0" style="font-family: Consola">Chiangchow</span><br>
                 Copyright &copy;2018 ZHISHAN-IoT | Webmaster:<a href="mailto:webmaster@zhishan-iot.ga" style="color:#878B91">webmaster@zhishan-iot.ga</a>
             </p>
         </footer>
