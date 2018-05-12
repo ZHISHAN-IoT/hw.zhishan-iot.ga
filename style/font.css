@@ -28,6 +28,27 @@
 {
   font-family: Ostrich Regular;
   font-style: normal;
-  src: url('/style/font/Ostrich Black.ttf');
+  src: url('/style/font/Ostrich Regular.ttf');
+}
+
+@font-face
+{
+  font-family: Lato Black;
+  font-style: normal;
+  src: url('/style/font/Lato Black.ttf');
+}
+
+@font-face
+{
+  font-family: Lato Bold;
+  font-style: normal;
+  src: url('/style/font/Lato Bold.ttf');
+}
+
+@font-face
+{
+  font-family: Lato Regular;
+  font-style: normal;
+  src: url('/style/font/Lato Regular.ttf');
 }
 

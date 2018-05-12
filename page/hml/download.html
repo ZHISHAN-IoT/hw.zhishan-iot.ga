@@ -6,36 +6,165 @@
 
 	<head>
 
+        <meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DOWNLOAD - HML - ZHISHAN-IoT</title>
+
         <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+        <link href="https://cdn.bootcss.com/bootstrap-social/5.1.1/bootstrap-social.min.css" rel="stylesheet">
         <link href="/style/font.css" rel="stylesheet">        
         <link href="/style/ui-hml.css" rel="stylesheet">
-
-		<title>Waiting...</title>
 	</head>
-	
-	<body>
-        <div class="container" style="margin-top: 50px">
-            <p>HML will jump to download page after 3 seconds...</p>
+    <!-- BODY -->
+    <body style="margin-top:40px">
+
+
+		<div class="container">   
+			<nav class="navbar navbar-inverse navbar-fixed-top navbar-expand navbar-dark flex-column flex-md-row bd-navbar">			
+				<a class="navbar-brand" href="https://zhishan-iot.ga" style="margin-left: 20px" target="_blank">ZHISHAN-IoT</a>
+						
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle navbar-toggler-right" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false" aria-controls="navbarNavDropdown" aria-label="Toggle navigation">
+						<span class="sr-only">Toggle navigation</span>
+
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div id="navbarNavDropdown" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="nav-item na-link active"><a href="index.html">Home</a></li>
+						<li class="nav-item na-link"><a href="index.html#page-about">About</a></li>
+						<li class="nav-item na-link"><a href="download.html">Download</a></li>
+						<li class="nav-item na-link dropdown">
+							<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>   
+								<ul class="dropdown-menu navbar-inverse" aria-labelledby="navbarNavDropdown">
+									<li><a class="dropdown-item" style="color:#9d9d9d" href ="/index.html">Hardware</a></li>
+									<li><a class="dropdown-item" style="color:#9d9d9d" href ="index.html">Hardware - HML</a></li>
+                                    <li class="divider"></li>
+									<li><a class="dropdown-item" style="color:#9d9d9d" href="http://blog.zhishan-iot.ga" target="_blank">Blog</a></li>
+									<li><a class="dropdown-item" style="color:#9d9d9d" href="https://bonus.zhishan-iot.ga" target="_blank">Bonus</a></li>
+									<li><a class="dropdown-item" style="color:#9d9d9d" href="http://metro.zhishan-iot.ga" target="_blank">Metro</a></li>
+								</ul>
+						</li>
+					</ul>
+				</div>
+				
+			</nav>
+		</div>
+
+        <!-- head -->
+        <div class="jumbotron jumbotron-background">
+             <div class="container">
+                <h1>HML</h1>
+                <p class="jumbotron-content ">Hardware Middle Layer<br>
+                provide a layer between hardware and originality</p>
+                <br><a class="pull-right btn btn-md jumbotron-button" href="../index.html#page-start" role="button">get started</a>
+             </div>
         </div>
 
-        <!-- Baidu Tongji -->
+        <div id="page-start" class="container">
+
+            <!-- basic-info table -->
+            <div>
+                <div class="page-header">
+                    <h1>DOWNLOAD</h1>
+                    <h4>Download page of HML</h4>               
+                </div>
+                <p>Select a component of HML you want to download from here</p>
+                <table class="table table-bordered table-hover table-responsive">
+                    <thead>
+                        <tr>
+                            <th class="info">FwLib Name</th>
+                            <th class="info">Support object</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://github.com/MCU-ZHISHAN-IoT/HML_8051">HML_FwLib_8051</a></td>
+                            <td>Intel MCS-51 based microprocessors (8031, 8032, 8051, 8052, etc.)</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th class="info">BSP Name</th>
+                            <th class="info">Support object</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <!-- footer -->
+        <footer class="container-fluid foot-wrap footer-wrap-plus">
+            <p class="footer-content" style="text-align: center">
+                Code with <span class="glyphicon glyphicon-heart" style="color:#FF0033" aria-hidden="true"></span> in <span data-toggle="popover" data-trigger="hover" title="What is Chiangchow?" data-content="A city with delicious SIGUOTANG" tabindex="0" style="font-family: Consola">Chiangchow</span><br>
+                Copyright &copy;2018 ZHISHAN-IoT | Webmaster:<a href="mailto:webmaster@zhishan-iot.ga" style="color:#878B91">webmaster@zhishan-iot.ga</a>
+            </p>
+        </footer>
+
+		<!-- script files about Bootstrap -->
+        <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+        <script src="https://cdn.bootcss.com/scrollup/2.4.1/jquery.scrollUp.min.js"></script>
+		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+        
         <script>
-            var _hmt = _hmt || [];
-            (function() {
-                var hm = document.createElement("script");
-                hm.src = "https://hm.baidu.com/hm.js?b1bbb96a9a3aa490445a38bec4d1fa05";
-                var s = document.getElementsByTagName("script")[0]; 
-                s.parentNode.insertBefore(hm, s);
-            })();
+            $(function(){
+                $.scrollUp({
+                    scrollName:'scrollUp',  // element ID
+                    topDistance:'300',      // distance from top element(px)
+                    topSpeed:700,           // speed of returning top(ms)
+                    animation:'fade',       // fade, slide, none
+                    animationInSpeed:200,
+                    animationOutSpeed:200,
+                    scrollText:'<i class="fa fa-angle-up"></i>',     // text content
+                    activeOverlay:false,
+                });
+                $(window).scroll(function() {
+                if( $(window).scrollTop()>'300'){
+                    $('#scrollUp').show();
+                }else{
+                    $('#scrollUp').hide();
+                }
+                });
+            });
+        </script> 
+
+        <script>
+            $(function(){
+                $.scrollUp();
+            });
+        </script> 
+
+        <!-- script for popover -->
+        <script>
+            $(document).ready(function() {
+                $(function () {
+                    $('[data-toggle="popover"]').popover();
+                });
+            }); 
+        </script>
+        <!-- script for tooltip -->
+        <script>
+            $(document).ready(function() {
+                $(function () {
+                    $('[data-toggle="tooltip"]').tooltip();
+                });
+            }); 
         </script>
 
-        <!-- jump script -->
-		<script language='javascript'>
-            function jump() {
-                document.location = 'https://github.com/ZHISHAN-IoT/HML'
-            }
-            setTimeout(jump,3000);
-        </script>
-	</body>
+    </body>
 	
 </html>

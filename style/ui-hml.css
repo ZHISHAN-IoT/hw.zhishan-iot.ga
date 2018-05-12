@@ -1,5 +1,6 @@
 /*
  * @Author:wlf(at)zhishan-iot.ga
+ * @Description:UI style of HML's page
  */
 
 * {
@@ -11,11 +12,12 @@ a,em {
 }
 
 h1 {
-    font-family: Ostrich Black;
+    font-family: Lato Black;
 }
 
 h2 {
-    font-family: Ostrich Regular;
+    font-family: Lato Regular;
+	font-weight: bold;
 }
 
 
@@ -76,6 +78,34 @@ p {
 	border: 1px solid rgba(255,255,255,0.6);
 }
 
+.div-feature {
+	-webkit-box-sizing: border-box;
+    box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	max-width: 310px;
+	margin-bottom: 30px;
+	border-radius: 0;
+
+	padding: 10px;
+	line-height: 1.42857143;
+	background-color: #fff;
+	border-radius:5px;
+	border: 1px solid #ddd;
+
+	transition: border .2s ease-in-out;
+	height: 360px;
+}
+
+.div-feature:hover {
+	border: 2px solid #000;
+}
+
 .footer-content {
     color:#878B91;
     font-family: Consola;
@@ -99,7 +129,7 @@ p {
 
 .h3-secondary-text {
 	color: #777;
-	font-family: Ostrich Regular;
+	font-family: Lato Regular;
 }
 
 .jumbotron-background {
@@ -116,7 +146,7 @@ p {
 }
 
 .jumbotron-content {
-    font-family: Ostrich Regular;
+    font-family: Lato Bold;
 }
 
 .member-info {
@@ -124,7 +154,7 @@ p {
 }
 
 .step-title {
-	font-family: Ostrich Regular;
+	font-family: Lato Regular;
 }
 
 #scrollUp {

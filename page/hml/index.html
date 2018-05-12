@@ -23,6 +23,7 @@
     <body style="margin-top:40px">
 
 
+        <!-- nav -->
 		<div class="container">   
 			<nav class="navbar navbar-inverse navbar-fixed-top navbar-expand navbar-dark flex-column flex-md-row bd-navbar">			
 				<a class="navbar-brand" href="https://zhishan-iot.ga" style="margin-left: 20px" target="_blank">ZHISHAN-IoT</a>
@@ -63,9 +64,9 @@
          <div class="jumbotron jumbotron-background">
              <div class="container">
                 <h1>HML</h1>
-                <p class="jumbotron-content ">Hardware Middle Layer<br>
+                <p class="jumbotron-content">Hardware Middle Layer<br>
                 provide a layer between hardware and originality</p>
-                <a class="pull-right btn btn-md jumbotron-button" href="#page-start" role="button">get started</a>
+                <br><a class="pull-right btn btn-md jumbotron-button" href="#page-start" role="button">get started</a>
              </div>
         </div>
 
@@ -74,7 +75,7 @@
 
             <!-- title -->
             <h1>HML - Hardware Middle Layer</h1>
-            <h4>Page update at 2018-03-28</h4>
+            <h4>Page updated at 2018-05-10</h4>
 
             <!-- social button -->
             <div class="row">
@@ -102,7 +103,9 @@
                 <div class="page-header">
                     <h2>What is HML?</h2>                    
                 </div>
-                <p>HML is a lite and easy-use firmware library & BSP set for some MCUs and boards,such as 8051 and STC89 series MCUs now(refer to <a href="#support-list">support-list</a> for details).It coded with C language and compiled by <a href="http://sdcc.sourceforge.net/">SDCC</a> compiler.HML aimed to provide a bridge from originality to hardware,help people develop more quickly.Besides,we found there is lack of application examples about SDCC on the Internet,even if SDCC is free and high-efficiency.So we decide to code HML to exploit the field and share our experience.HML opens all source files on <a href="https://github.com">GitHub</a>.Welcome advice from you!</p>
+                <p>HML is an open-source project that provides various lite and easy-use firmware libraries & BSPs for some widely used MCUs, such as the 8051 series and the STC89 series, or their development boards (refer to support-list for details). The slogan of HML, “Provide a layer between hardware and originality”, reveals that the main purpose of HML is to help developers to develop these devices more easily and quickly.</p>
+                <p>The source files of HML are all written in C language. However, different components may rely on different development tools. For example, the HML_FwLib_8051 is developed for SDCC, while others might be developed for Keil, or avr-gcc etc. Please refer to the detail page of each component for specifics.</p>
+                <p>You can download or make contribution to HML projects through <a href="https://github.com">GitHub</a>. Welcome the advices from you, thanks!</p>
             </div>
 
             <!-- #Support-list -->
@@ -110,14 +113,16 @@
                 <div id="support-list" class="page-header">
                     <h2>What MCU or board is being supported by HML now?</h2>                    
                 </div>
-                <p>The lastest version code of HML is <strong>v0.0.0</strong>,and the followings is support list of current version and related component in HML:</p>
+                <p>The table is support list of HML:</p>
                 <ul class="list-group">
                     <li class="list-group-item active">MCU<a class="pull-right" href="#component-list" style="color:white" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="jump to component list">corresponding component</a></li>
                     <li class="list-group-item">Intel MCS-51 based microprocessors (8031, 8032, 8051, 8052, etc.)</li>
-                    <li class="list-group-item">STC micro STC89 series (STC89C52RC, STC89C54RD, etc.)</li>
+                    <li class="list-group-item"><i>STC micro STC89 series (STC89C52RC, STC89C54RD, etc.)</i></li>
+                    <li class="list-group-item"><i>STC micro STC90 series (STC90C52RC, STC90C54RD+, etc.)</i></li>
                     <li class="list-group-item active">BOARD <a class="pull-right" href="#component-list" style="color:white" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="jump to component list">corresponding component</a></li>
                     <li class="list-group-item">...</li>
                 </ul>
+                <p>*Note: Italic item means that it will be online soon or offline temporarily.</p>
             </div>
 
             <!-- #Component-list -->
@@ -125,127 +130,33 @@
                 <div id="component-list" class="page-header">
                     <h2>What components are inside HML now?</h2>                    
                 </div>
-                    <table class="table table-bordered table-hover table-responsive">
-                        <thead>
-                            <tr>
-                                <th class="info">FwLib Name</th>
-                                <th class="info">Support object</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><a href="download.html">HML_FwLib_8051</a></td>
-                                <td>Intel MCS-51 based microprocessors (8031, 8032, 8051, 8052, etc.)</td>
-                            </tr>
-                            <tr>
-                                <td><a href="download.html">HML_FwLib_STC89</a></td>
-                                <td>STC micro STC89 series (STC89C52RC, STC89C54RD, etc.)</td>
-                            </tr>
-                        </tbody>
-                        <thead>
-                            <tr>
-                                <th class="info">BSP Name</th>
-                                <th class="info">Support object</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>...</td>
-                                <td>...</td>
-                            </tr>
-                        </tbody>
-                    </table>
-            </div>
-
-            <div>
-                <div class="page-header">
-                    <h2>How to start?</h2>
-                </div>
-
-                <h3 class="step-title">STEP-1 <small class="h3-secondary-text">requierd-environment and tools</small></h3>
-                <p>You need some prepartions about configuring tools before using HML.</p>
-                <p>Firstly,you need <strong>a computer with fitted operation system</strong>.HML is known to compile from the source code on the following platforms:</p>
-                <ul class="list-group">
-                    <li class="list-group-item">Linux - x86_64</li>
-                    <li class="list-group-item">Microsoft Windows - x86</li>
-                    <li class="list-group-item">Microsoft Windows - x86_64</li>
-                    <li class="list-group-item">Rasbian (Debian for Raspberry Pi) - ARMv6</li>
-                </ul>
-                <p>In fact,it may be Ok on other platforms as long as it can run SDCC.However,we don't have such conditions to verify.If run HML successfully on the other platforms,you can tell us via <a href="mailto:mcu@zhishan-iot.ga">mcu@zhishan-iot.ga</a>.</p>
-                <p>Secondly,<strong>install the lastest version of <a href="http://sdcc.sourceforge.net/">SDCC</a> according to your OS and refer to <a href="#support-list">support-list</a> to download component of HML which is fitted with your MCU or board.</strong>In order to make sure that SDCC has been installed rightly,users of Linux need to enter <kbd>sdcc --version</kbd> in terminal;and users of Windows need enter the same code in cmd.exe.Then if it shows version information of SDCC like following screenshot,it means all is Ok!</p>
-                <img src="/image/hml/screenshot-20180319001.jpg" alt="screenshot-20180319001.jpg" class="img-responsive img-rounded"><br>
-                <div class="panel panel-info">
-                    <div class="panel-heading"><h3 class="panel-title">Note for users of Windows</h3></div>
-                    <div class="panel-body">Users may need to configure environment variable of SDCC manually!</div>
-                </div>
-
-                <h3 class="step-title">STEP-2 <small class="h3-secondary-text">get start with HML</small></h3>
-                <p>In the beginning of this step,you need to know the file structment of HML.Every HML component has similar structment,there may be few subtle distinctions amony them.Now we take HML_FwLib_8051 for example.</p>
-                <div class="panel panel-default">
-                    <div class="panel-heading"><span class="glyphicon glyphicon-folder-open" aria-hidden="true" style="margin-right: 10px"></span>File structment of HML_FwLib_8051</div>
-                    <div class="panel-body">
-                        <div>
-                            <p style="font-family: Consola">
-                                HML_FwLib_8051<br>
-                                ├── inc<br>
-                                ├── obj<br>
-                                ├── sample<br>
-                                ├── src<br>
-                                ├── user<br>
-                                └── errormap.txt<br>
-                            </p>
-                        </div>
-                        <div>The tree shows the structment of HML_FwLib_8051,it includes inc,obj,sample,src,test folders and errormap.txt.Details about them show in the following form.</div>
-                    </div>
-                    <table class="table table-bordered table-hover table-responsive">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>inc</td>
-                                <td>include all header files(*.h) of HML</td>
-                            </tr>
-                           <tr>
-                                <td>obj</td>
-                                <td>store all output files,incluing *.hex,*.ihx,*.lk,*.rel, during compiling</td>
-                            </tr>
-                           <tr>
-                                <td>sample</td>
-                                <td>provide some sample files with *.c format to help users learn about HML</td>
-                            </tr>
-                           <tr>
-                                <td>src</td>
-                                <td>store all source files(*.c) of HML</td>
-                            </tr>
-                           <tr>
-                                <td>user</td>
-                                <td>store makefile and a source file which includes main function</td>
-                            </tr>
-                            <tr>
-                                <td>errormap.txt</td>
-                                <td>record all error-code information defined by HML, they may appear during compiling</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td colspan="2">
-                                    #Note:<br>
-                                    &nbsp;*makefile's name are all added platform-name in the end for different platforms,such as makefile_win_x64<br>
-                                    &nbsp;*default name of the source file with main function in user folder is <em style="font-family: Consola">test.c</em><br>
-                                </td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
-                <p>There are two ways to start your project with HML,they are #QuickStart and #Custom.</p>
-                <p><strong>QuickStart</strong>: user just need modify code in <em>test.c</em>,and use default makefile,then it will comlete all work.After makefile script complete compiling,it will show these information like following image.If you computer support beeper,the script will enable the beeper to notify you all works are completed,and you can disable this function by delete related line in script file.</p>
-                <a href="/image/hml/screenshot-20180319002.jpg"><img src="/image/hml/screenshot-20180319002.jpg" alt="screenshot-20180319002.jpg" class="img-rounded img-responsive"></a><br>
-                <p><strong>Custom</strong>: if you have enough abilities or want to do more things,you can just add <em>inc</em> and <em>src</em> folders into your project and write your own makefile.</p>
-
+                <p>Different components require different tools or development environment. You can click links in this table for getting more operation details about them.</p>
+                <table class="table table-bordered table-hover table-responsive">
+                    <thead>
+                        <tr>
+                            <th class="info">FwLib Name</th>
+                            <th class="info">Support object</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="detail/fwlib_8051.html">HML_FwLib_8051</a></td>
+                            <td>Intel MCS-51 based microprocessors (8031, 8032, 8051, 8052, etc.)</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th class="info">BSP Name</th>
+                            <th class="info">Support object</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <!-- #Who are we -->
@@ -253,12 +164,16 @@
                 <div id="page-about" class="page-header">
                     <h2>Who are we?</h2>                    
                 </div>
-                <p> We are a group of elecronic fans from <a href="https://zhishan-iot.ga"><strong style="font-family: Consola">ZHISHAN-IoT</strong></a>.The members of development team are:</p>
+                <p> We are a group of elecronic fans from <a href="https://zhishan-iot.ga"><strong style="font-family: Consola">ZHISHAN-IoT</strong></a>. The members of development team are:</p>
                 <table class="table table-hover table-striped">
                     <tbody>
                         <tr>
                             <td class="member-info">Jiabin Hsu</td>
                             <td class="member-info">zsiothsu(at)zhishan-iot.ga</td>
+                        </tr>
+                        <tr>
+                            <td class="member-info">Liang Wu</td>
+                            <td class="member-info">waleema(at)zhishan-iot.ga</td>
                         </tr>
                         <tr>
                             <td class="member-info">Weilun Fong</td>
@@ -272,7 +187,7 @@
                 <div class="page-header">
                     <h2>I have suggestions or other words about HML!</h2>                    
                 </div>
-                <p>We welcome any suggestions,questions or others about HML from you to build a better HML! You can connact us via <a href="mailto:">mcu@zhishan-iot.ga</a>. And if you have any words about this website,please contact webmaster via <a href="mailto:webmaster@zhishan-iot.ga">webmaster@zhishan-iot.ga</a>.</p>
+                <p>We welcome any suggestions, questions or others about HML from you to build a better HML! You can contact us via <a href="mailto:">mcu@zhishan-iot.ga</a>. And if you have any words about this website, please contact webmaster via <a href="mailto:webmaster@zhishan-iot.ga">webmaster@zhishan-iot.ga</a>.</p>
             </div>
 
             <!-- #Friendly links -->
@@ -286,8 +201,10 @@
                         <a class="list-group-item" href="http://v3.bootcss.com/">Bootstrap中文网</a>
                         <a class="list-group-item" href="http://github.com/">GitHub</a>
                         <a class="list-group-item" href="http://glyphicons.com/">Glyphicons</a>
+                        <a class="list-group-item" href="http://www.sfont.cn">在线字体转换工具 / TTF | OTF | WOFF | WOFF2 | EOT - SFont.CN</a>
                         <a class="list-group-item" href="http://sdcc.sourceforge.net/">SDCC - Small Device C Compiler</a>
                         <a class="list-group-item" href="http://lipis.github.io/bootstrap-social/">Social Buttons for Bootstrap</a>
+                        <a class="list-group-item" href="http://wtfpl2.com/">WTFPL 2</a>
                         <a class="list-group-item" href="https://zhishan-iot.ga/">ZHISHAN-IoT</a>
                     </div>
                 </div>
