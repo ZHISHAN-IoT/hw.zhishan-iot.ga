@@ -1,6 +1,6 @@
 <!--
     @Author:wlf(at)zhishan-iot.ga
-    @Description:detail page for HML_FwLib_8051
+    @Description:detail page for HML_FwLib_STC89
   -->
 
 <!DOCTYPE html>
@@ -11,7 +11,7 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>HML_FwLib_8051 - HML - ZHISHAN-IoT</title>
+		<title>HML_FwLib_STC89 - HML - ZHISHAN-IoT</title>
 
         <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
@@ -73,8 +73,8 @@
         <div id="page-start" class="container">
 
             <!-- title -->
-            <h1>HML - HML_FwLib_8051</h1>
-            <h4>A lite firmware library for 8051 MCUs.</h4>
+            <h1>HML - HML_FwLib_STC89</h1>
+            <h4>A firmware library for STC89 MCUs.</h4>
 
             <!-- social button -->
             <div class="row">
@@ -102,8 +102,8 @@
                 <div class="page-header">
                     <h2>Introduction</h2>                   
                 </div>
-                <p>HML_FwLib_8051 is the first member component of HML firmware libraries, providing a group of functions for users to handle the on-chip resources of 8051 MCUs, including GPIO, external interrupt, timer and UART modules. The 8051 MCUs have been one of the most widely used MCUs since it was produced by Intel in 1981. As amateurs with some experience of 8051 development, we intend to develop a lite and easy-use tool that can help future developers to complete projects based on 8051 MCUs more easily and quickly.</p>
-                <p>The source codes are written in C language and for <a href="http://sdcc.sourceforge.net/">SDCC compiler</a>, i.e., it can only be compiled by SDCC. This choice is motivated by the fact that SDCC is free and highly efficient, while there are very few examples of application about SDCC on the Internet. We hope that, as one of the early attempts to develop MCU projects using SDCC, this work will make SDCC become more popular among MCU developers.</p>
+                <p>HML_FwLib_STC89 is a firmware library for STC micro STC89 series MCUs, providing a group of functions for users to operate the on-chip resources of STC89 MCUs, including GPIO, wathchdog, ISP and UART modules. The STC89 series MCUs, backward compatible to 8051 series MCUs, is one of the most widely used MCUs series in Mainland, China. We team intend to develop a lite and easy-use firmware library that can help future developers to complete projects based on STC89 MCUs and SDCC compiler more easily and quickly.</p>
+                <p>The source codes are written in C language and for SDCC compiler, i.e., it can only be compiled by SDCC. This choice is motivated by the fact that SDCC is free and highly efficient, while there are very few examples of application about SDCC on the Internet. We hope that, as one of the early attempts to develop MCU projects using SDCC, this work will make SDCC become more popular among MCU developers.</p>
             </div>
             <!-- feature -->
             <div>
@@ -122,14 +122,21 @@
                         <div class="div-feature">
                             <img src="/image/icon-tool.png" style="height: 200px"></img>
                             <hr>
-                            <p>To the best of our knowledge, it's the first MCU firmware library developed base on SDCC compiler.</p>
+                            <p>Base on SDCC, a lite compiler suit for various MCUs.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 ">
                         <div class="div-feature">
                             <img src="/image/hml/screenshot-20180603001.jpg" style="height: 200px"></img>
                             <hr>
-                            <p>More readable code, no need to care about internal registers of 8051 MCU.</p>
+                            <p>More readable code, no need to care about internal registers of STC89 MCU.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 ">
+                        <div class="div-feature">
+                            <img src="/image/hml/2018.06.05001.jpg" style="height: 200px"></img>
+                            <hr>
+                            <p>Fully support all on-chip resource, including ISP, wathchdog and so on.</p>
                         </div>
                     </div>
                 </div>
@@ -139,7 +146,7 @@
                 <div class="page-header">
                     <h2>Basic information</h2>                   
                 </div>
-                <p>This table shows basic information of HML_FwLib_8051.</p>
+                <p>This table shows basic information of HML_FwLib_STC89.</p>
                 <table class="table table-bordered table-hover table-responsive">
                     <thead>
                         <tr>
@@ -150,7 +157,7 @@
                     <tbody>
                         <tr>
                             <td>Name</td>
-                            <td>HML_FwLib_8051</td>
+                            <td>HML_FwLib_STC89</td>
                         </tr>
                         <tr>
                             <td>Compiler or IDE</td>
@@ -158,12 +165,12 @@
                         </tr>
                         <tr>
                             <td>Current Version</td>
-                            <td>v0.0.2</td>
+                            <td>v0.0.1</td>
                         </tr>
                         <tr>
                             <td>Download Link</td>
-                            <td><a href="https://github.com/MCU-ZHISHAN-IoT/HML_FwLib_8051">DOWNLOAD - HML : HML_FwLib_8051</a></td>
-                        </tr>
+                            <td><a href="https://github.com/MCU-ZHISHAN-IoT/HML_FwLib_STC89" target="_blank">DOWNLOAD - HML : HML_FwLib_STC89</a></td>
+                        </tr> 
                         <tr>
                             <td>License</td>
                             <td>WTFPL2</td>
@@ -174,11 +181,11 @@
                         </tr>
                         <tr>
                             <td>Target MCU</td>
-                            <td>Intel MCS-51 based microprocessors (8031, 8032, 8051, 8052, etc.)</td>
+                            <td>STC micro STC89 series (STC89C52RC, STC89C54RD, etc.)</td>
                         </tr>
                         <tr>
                             <td>Update date</td>
-                            <td><time>2018-05-20</time></td>
+                            <td><time>2018-05-28</time></td>
                         </tr>
                     </tbody>
                 </table>
@@ -189,9 +196,10 @@
                 <div class="page-header">
                     <h2>How to start?</h2>
                 </div>
+
                 <h3 class="step-title">STEP-1 <small class="h3-secondary-text">requierd-environment and tools</small></h3>
-                <p>You need some preparations before using HML_FwLib_8051.</p>
-                <p>Before using HML_FwLib_8051, the installation of SDCC compiler is necessary. Please refer to the support-list to download suitable version of SDCC corresponding to your operation system. In order to make sure that SDCC has been installed correctly, you can enter sdcc --version in terminal of Linux, or in cmd.exe of Windows. If the version information of SDCC is shown as the following figure, it means everything is Ok!</p>
+                <p>You need some preparations before using HML_FwLib_STC89.</p>               
+                <p>Before using HML_FwLib_STC89, the installation of SDCC compiler is necessary. Please refer to the support-list to download suitable version of SDCC corresponding to your operation system. In order to make sure that SDCC has been installed correctly, you can enter sdcc --version in terminal of Linux, or in cmd.exe of Windows. If the version information of SDCC is shown as the following figure, it means everything is Ok!</p>
                 <img src="/image/hml/screenshot-20180319001.jpg" alt="screenshot-20180319001.jpg" class="img-responsive img-rounded"><br>
                 <div class="panel panel-info">
                     <div class="panel-heading"><h3 class="panel-title">Note for users of Windows</h3></div>
@@ -199,14 +207,14 @@
                 </div>
                 <p>Besides, we recomand use GNU Make to help generate target file. There is a file named "Makefile" under <i>user</i> directory in advance.</p>
 
-                <h3 class="step-title">STEP-2 <small class="h3-secondary-text">get started with HML_FwLib_8051</small></h3>
-                <p>At the beginning of this step,you need to know the file structure of HML_FwLib_8051.</p>
+                <h3 class="step-title">STEP-2 <small class="h3-secondary-text">get started with HML_FwLib_STC89</small></h3>
+                <p>At the beginning of this step,you need to know the file structure of HML_FwLib_STC89.</p>
                 <div class="panel panel-default">
-                    <div class="panel-heading"><span class="glyphicon glyphicon-folder-open" aria-hidden="true" style="margin-right: 10px"></span>File structment of HML_FwLib_8051</div>
+                    <div class="panel-heading"><span class="glyphicon glyphicon-folder-open" aria-hidden="true" style="margin-right: 10px"></span>File structment of HML_FwLib_STC89</div>
                     <div class="panel-body">
                         <div>
                             <p style="font-family: Consola">
-                                HML_FwLib_8051<br>
+                                HML_FwLib_STC89<br>
                                 ├── doc<br>
                                 ├── inc<br>
                                 ├── obj<br>
@@ -215,7 +223,7 @@
                                 └── user<br>
                             </p>
                         </div>
-                        <div>The tree shows the structment of HML_FwLib_8051,it includes inc, obj, sample, src and user folders. Details about them are shown in the following form.</div>
+                        <div>The tree shows the structment of HML_FwLib_STC89, it includes inc, obj, sample, src and user folders. Details about them are shown in the following form.</div>
                     </div>
                     <table class="table table-bordered table-hover table-responsive">
                         <thead>
@@ -227,7 +235,7 @@
                         <tbody>
                             <tr>
                                 <td>doc</td>
-                                <td>store releated documents about HML_FwLib_8051</td>
+                                <td>store releated documents about HML_FwLib_STC89</td>
                             </tr>
                             <tr>
                                 <td>inc</td>
@@ -260,10 +268,13 @@
                         </tfoot>
                     </table>
                 </div>
-                <p>There are two ways to start your project with HML_FwLib_8051,they are #QuickStart and #Custom.</p>
+                <p>There are two ways to start your project with HML_FwLib_STC89, they are #QuickStart and #Custom.</p>
                 <p><strong>QuickStart</strong>: you just need to modify the content of test.c and then enter the <strong>make</strong> under <i>user</i> directory as shown in the first line of the following figure, the remain work will be completed automatically by Makefile. After the compiling is finished, the message will be shown as the following figure. </p>
-                <a href="/image/hml/screenshot-20180502001.jpg"><img src="/image/hml/screenshot-20180502001.jpg" alt="screenshot-20180502001.jpg" class="img-rounded img-responsive"></a><br>
+                <a href="/image/hml/screenshot-20180613001.jpg"><img src="/image/hml/screenshot-20180613001.jpg" alt="screenshot-20180502001.jpg" class="img-rounded img-responsive"></a><br>
                 <p><strong>Custom</strong>: if you have enough abilities or want to do more things,you can just add <em>inc</em> and <em>src</em> folders into your project and write your own makefile.</p>
+
+                <h3 class="step-title">STEP-3 <small class="h3-secondary-text">parameters configuration</small></h3>
+                <p>There are two parameters that could be modified in the head file “macro.h”. They are “MCU_MODEL”, specifying the model of the target MCU, and “_FRE_OSC_”, specifying the clock rate of the target MCU. The supported value of these two parameters are listed on the file, and the default value of former one is <em>MCU_STC89C52RC</em>, the other is <em>11059200L.</em></p>
 
             </div>
 
@@ -272,9 +283,13 @@
                 <div id="page-about" class="page-header">
                     <h2>Developer</h2>                    
                 </div>
-                <p>This is an one-man project ...</p>
+                <p>Thanks their works for HML_FwLib_STC89!!</p>
                 <table class="table table-hover table-striped">
                     <tbody>
+                        <tr>
+                            <td class="member-info">Jiabin Hsu</td>
+                            <td class="member-info">zsiothsu(at)zhishan-iot.ga</td>
+                        </tr>
                         <tr>
                             <td class="member-info">Weilun Fong</td>
                             <td class="member-info">wlf(at)zhishan-iot.ga</td>
