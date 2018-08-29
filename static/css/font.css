@@ -1,0 +1,63 @@
+/*
+  @Author:wlf(at)zhishan-iot.tk
+  @Dessciption:font style sheet
+ */
+
+@font-face
+{
+  font-family: Consola;
+  font-style: normal;
+  src: url('/static/font/consola.ttf');
+}
+
+@font-face
+{
+  font-family: OpenSans-Regular;
+  font-style: normal;
+  src: url('/static/font/OpenSans-Regular.ttf');
+}
+
+/* Lato */
+@font-face
+{
+  font-family: Lato Black;
+  font-style: normal;
+  src: url('/static/font/Lato Black.ttf');
+}
+
+@font-face
+{
+  font-family: Lato Bold;
+  font-style: normal;
+  src: url('/static/font/Lato Bold.ttf');
+}
+
+@font-face
+{
+  font-family: Lato Regular;
+  font-style: normal;
+  src: url('/static/font/Lato Regular.ttf');
+}
+
+/* Source Sans Pro */
+
+@font-face {
+  font-family: "Source Sans Pro Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url('/static/font/ssp-Bold.woff');
+}
+
+@font-face {
+  font-family: "Source Sans Pro Light";
+  font-style: normal;
+  font-weight: 200;
+  src: url('/static/font/ssp-ExtraLight.woff');
+}
+
+@font-face {
+  font-family: "Source Sans Pro Normal";
+  font-style: normal;
+  font-weight: 400;
+  src: url('/static/font/ssp-Normal.woff');
+}

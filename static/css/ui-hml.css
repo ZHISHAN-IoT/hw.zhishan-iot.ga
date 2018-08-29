@@ -1,5 +1,5 @@
 /*
- * @Author:wlf(at)zhishan-iot.ga
+ * @Author:wlf(at)zhishan-iot.tk
  * @Description:UI style of HML's page
  */
 
@@ -10,6 +10,16 @@
 a,em {
     font-family: Consola;
 }
+
+button {
+	border:none;
+	outline:none;
+}
+
+/* time {
+	font-size: 14px;
+	color: #808080;
+} */
 
 h1 {
     font-family: Lato Black;
@@ -24,7 +34,6 @@ h2 {
 p {
     font-size: 16px;
 }
-
 
 .btn-md {
 	color: #ffffff;
@@ -78,6 +87,14 @@ p {
 	border: 1px solid rgba(255,255,255,0.6);
 }
 
+.btn-new {
+	border:none;
+	font-size: 20px;
+	outline:none;
+	padding:5px;
+	margin-bottom: 8px;
+}
+
 .div-feature {
 	-webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -106,8 +123,17 @@ p {
 	border: 2px solid #808080;
 }
 
+.div-news {
+	border-radius: 10px;
+	box-sizing: inherit;
+	list-style: none;
+	padding: 20px;
+	margin: 10px;
+	max-width: 350px;
+}
+
 .footer-content {
-    color:#878B91;
+    color:#DDD;
     font-family: Consola;
 	font-size: 14px;
     margin-top: 25px;
@@ -153,6 +179,30 @@ p {
 	font-family: Consola;
 }
 
+.news-content {
+	color: white;
+	font-family: Lato Regular;
+	font-size: 16px;
+	margin: 0 0 2rem;
+	text-decoration: none;
+}
+
+.news-time {
+
+	color: white;
+	font-family: OpenSans-Regular;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.news-title {
+	color: white;
+	font-family: Lato Black;
+	font-size: 20px;
+	margin: 0 0 2rem;
+	text-decoration: none;
+}
+
 .step-title {
 	font-family: Lato Regular;
 }
@@ -177,3 +227,7 @@ p {
     background-color: #333;
 }
 
+/* test */
+.top-nav {
+	background-color: blue;
+}

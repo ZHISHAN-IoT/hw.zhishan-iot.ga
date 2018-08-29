@@ -1,0 +1,97 @@
+/*
+ * @Author:wlf(at)zhishan-iot.tk
+ * @Description:UI style of local social button
+ */
+
+/*  Wechat */
+
+.btn-wechat {
+	color:#fff;
+	background-color:#43B034;
+	border-color:rgba(0,0,0,0.2);
+}
+
+.btn-wechat:focus,.btn-wechat.focus {
+	color:#fff;
+	background-color:#00A600;
+	border-color:rgba(0,0,0,0.2);
+}
+
+.btn-wechat:hover {
+	color:#fff;
+	background-color:#00A600;
+	border-color:rgba(0,0,0,0.2);
+}
+
+.btn-wechat:active,.btn-wechat.active,.open>.dropdown-toggle.btn-wechat {
+	color:#fff;
+	background-color:#00A600;
+	border-color:rgba(0,0,0,0.2);
+}
+
+.btn-wechat:active:hover,.btn-wechat.active:hover,.open>.dropdown-toggle.btn-wechat:hover,.btn-wechat:active:focus,.btn-wechat.active:focus,.open>.dropdown-toggle.btn-wechat:focus,.btn-wechat:active.focus,.btn-wechat.active.focus,.open>.dropdown-toggle.btn-wechat.focus {
+	color:#fff;
+	background-color:#00A600;
+	border-color:rgba(0,0,0,0.2);
+}
+
+.btn-wechat:active,.btn-wechat.active,.open>.dropdown-toggle.btn-wechat {
+	background-image:none;
+}
+
+.btn-wechat.disabled:hover,.btn-wechat[disabled]:hover,fieldset[disabled] .btn-wechat:hover,.btn-wechat.disabled:focus,.btn-wechat[disabled]:focus,fieldset[disabled] .btn-wechat:focus,.btn-wechat.disabled.focus,.btn-wechat[disabled].focus,fieldset[disabled] .btn-wechat.focus {
+	background-color:#43B034;
+	border-color:rgba(0,0,0,0.2);
+}
+
+.btn-wechat.badge {
+	color:#43B034;
+	background-color:#fff;
+}
+
+
+/* QQ */
+
+.btn-qq {
+    color:#fff;
+    background-color:#71C5F2;
+    border-color:rgba(0,0,0,0.2);
+}
+
+.btn-qq:focus,.btn-qq.focus {
+    color:#fff;
+    background-color:#0080FF;
+    border-color:rgba(0,0,0,0.2);
+}
+
+.btn-qq:hover {
+    color:#fff;
+    background-color:#0080FF;
+    border-color:rgba(0,0,0,0.2);
+}
+
+.btn-qq:active,.btn-qq.active,.open>.dropdown-toggle.btn-qq {
+    color:#fff;
+    background-color:#0080FF;
+    border-color:rgba(0,0,0,0.2);
+}
+
+.btn-qq:active:hover,.btn-qq.active:hover,.open>.dropdown-toggle.btn-qq:hover,.btn-qq:active:focus,.btn-qq.active:focus,.open>.dropdown-toggle.btn-qq:focus,.btn-qq:active.focus,.btn-qq.active.focus,.open>.dropdown-toggle.btn-qq.focus {
+    color:#fff;
+    background-color:#0080FF;
+    border-color:rgba(0,0,0,0.2);
+}
+
+.btn-qq:active,.btn-qq.active,.open>.dropdown-toggle.btn-qq {
+    background-image:none;
+}
+
+.btn-qq.disabled:hover,.btn-qq[disabled]:hover,fieldset[disabled] .btn-qq:hover,.btn-qq.disabled:focus,.btn-qq[disabled]:focus,fieldset[disabled] .btn-qq:focus,.btn-qq.disabled.focus,.btn-qq[disabled].focus,fieldset[disabled] .btn-qq.focus {
+    background-color:#71C5F2;
+    border-color:rgba(0,0,0,0.2);
+}
+
+.btn-qq.badge {
+    color:#71C5F2;
+    background-color:#fff;
+}
