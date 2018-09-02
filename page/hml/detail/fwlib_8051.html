@@ -85,7 +85,7 @@
             <!-- social button -->
             <div class="row">
                 <div class="col-xs-12">
-                    <a class="btn btn-sm btn-social-icon btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhw.zhishan-iot.tk%2Fpage%2Fhml%2Findex.html&amp;src=sdkpreparse" target="_blank">
+                    <a class="btn btn-sm btn-social-icon btn-facebook" href="javascript:shareToFacebook();" target="_blank">
                         <span class="fa fa-facebook"></span>
                     </a> 
                     <a class="btn btn-sm btn-social-icon btn-github">
@@ -105,7 +105,6 @@
                     </a>
                 </div>
             </div>
-
 
             <!-- introduction -->
             <div>
@@ -188,7 +187,7 @@
                         </tr>
                         <tr>
                             <td>Update date</td>
-                            <td><time>2018-05-20</time></td>
+                            <td><time>2018-08-26</time></td>
                         </tr>
                     </tbody>
                 </table>
@@ -273,8 +272,11 @@
                 <p>There are two ways to start your project with HML_FwLib_8051,they are #QuickStart and #Custom.</p>
                 <p><strong>QuickStart</strong>: you just need to modify the content of test.c and then enter the <strong>make</strong> under <i>user</i> directory as shown in the first line of the following figure, the remain work will be completed automatically by Makefile. After the compiling is finished, the message will be shown as the following figure. </p>
                 <a href="/image/hml/screenshot-20180502001.jpg"><img src="/image/hml/screenshot-20180502001.jpg" alt="screenshot-20180502001.jpg" class="img-rounded img-responsive"></a><br>
-                <p><strong>Custom</strong>: if you have enough abilities or want to do more things,you can just add <em>inc</em> and <em>src</em> folders into your project and write your own makefile.</p>
+                <p><strong>Custom</strong>: if you have enough abilities or want to do more things, you can just add <em>inc</em> and <em>src</em> folders into your project and write your own makefile.</p>
 
+                <h3 class="step-title">STEP-3 <small class="h3-secondary-text">parameters configuration</small></h3>
+                <p>There are two parameters that could be modified in the head file “macro.h”. They are <em>MCU_MODEL</em>, specifying the model of the target MCU, and <em>_FRE_OSC_</em>, specifying the clock rate of the target MCU. The supported value of these two parameters are listed on the file, and the default value of former one is <em>MCU_STC89C52RC</em>, the other is <em>11059200L.</em></p>
+                <p>Besides, the conditional compilation mechanism is introduced into the source code. In order to ensure the projects based on HML_FwLib_8051 can be downloaded into the limited space of 8051 MCUs, the developers can modify the macro definition named <em>___COMPILE_XXX___</em> in macro.h to specify which piece of code should be compiled, thus to reduce the size of the HEX file.</p>
             </div>
 
             <!-- developer -->
@@ -298,7 +300,7 @@
         <!-- footer -->
         <footer class="container-fluid foot-wrap footer-wrap-plus">
             <p class="footer-content" style="text-align: center">
-                Code with <span class="glyphicon glyphicon-heart" style="color:#FF0033" aria-hidden="true"></span> in <span data-toggle="popover" data-trigger="hover" title="What is Chiangchow?" data-content="A city with delicious SIGUOTANG" tabindex="0" style="font-family: Consola">Chiangchow</span><br>
+                Code with <span class="glyphicon glyphicon-heart" style="color:#FF0033" aria-hidden="true"></span> in <a href="https://en.wikipedia.org/wiki/Zhangzhou" style="color: #DDD"><i>Chiangchow</i></a><br>
                 Copyright &copy;2018 ZHISHAN-IoT | Webmaster:<a href="mailto:webmaster@zhishan-iot.tk" style="color:#DDD">webmaster@zhishan-iot.tk</a>
             </p>
         </footer>

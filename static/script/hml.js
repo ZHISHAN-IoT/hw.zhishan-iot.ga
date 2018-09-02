@@ -2,9 +2,21 @@
  * @Author:wlf(at)zhishan-iot.tk
  */
 
+
+/*
+ * @Description:share to Google+
+ */
 function shareToGooglePlus() {
-    var _url = encodeURIComponent("https://hw.zhishan-iot.tk");//(window.location.href);
+    var _url = encodeURIComponent(window.location.href);
     window.open("https://plus.google.com/share?"+"url="+_url);
+}
+
+/*
+ * @Description:share to Facebook
+ */
+function shareToFacebook() {
+    var _url = encodeURIComponent(window.location.href)
+    window.open("https://www.facebook.com/sharer/sharer.php?u="+_url+"&amp;src=sdkpreparse");
 }
 
 /*
@@ -26,12 +38,7 @@ function shareToQq() {
  * @Description:share to Facebook
  */
 function shareToTwitter() {
-    //https://twitter.com/intent/tweet?
-    var _host = document.location.host;
-    var _summary = encodeURIComponent("HML is an open-source project that provides various lite and easy-use firmware libraries & BSPs for some widely used MCUs, such as the 8051 series and the STC89 series, or their development boards.");
-    var _title = document.title.toString();
     var _url = document.location.toString();
-
     /* generate share URL to Twitter */
     var sharUrl = "https://twitter.com/intent/tweet?"+"url="+_url;
     window.open(sharUrl);
