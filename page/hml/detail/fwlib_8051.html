@@ -136,7 +136,7 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 ">
                         <div class="div-feature">
-                            <img src="/image/hml/screenshot-20180603001.jpg" style="height: 200px"></img>
+                            <img src="/image/hml/screenshot-20180923001.jpg" style="height: 200px"></img>
                             <hr>
                             <p>More readable code, no need to care about internal registers of 8051 MCU.</p>
                         </div>
@@ -167,7 +167,7 @@
                         </tr>
                         <tr>
                             <td>Current Version</td>
-                            <td>v0.0.3</td>
+                            <td>v0.0.4</td>
                         </tr>
                         <tr>
                             <td>Download Link</td>
@@ -187,7 +187,7 @@
                         </tr>
                         <tr>
                             <td>Update date</td>
-                            <td><time>2018-08-26</time></td>
+                            <td><time>2018-09-22</time></td>
                         </tr>
                     </tbody>
                 </table>
@@ -200,13 +200,13 @@
                 </div>
                 <h3 class="step-title">STEP-1 <small class="h3-secondary-text">requierd-environment and tools</small></h3>
                 <p>You need some preparations before using HML_FwLib_8051.</p>
-                <p>Before using HML_FwLib_8051, the installation of SDCC compiler is necessary. Please refer to the support-list to download suitable version of SDCC corresponding to your operation system. In order to make sure that SDCC has been installed correctly, you can enter sdcc --version in terminal of Linux, or in cmd.exe of Windows. If the version information of SDCC is shown as the following figure, it means everything is Ok!</p>
+                <p>Before using HML_FwLib_8051, the installation of SDCC compiler is necessary. Please refer to the support-list to download suitable version of SDCC corresponding to your operation system. In order to make sure that SDCC has been installed correctly, you can enter <kbd>sdcc --version</kbd> in terminal of Linux, or in cmd.exe of Windows. If the version information of SDCC is shown as the following figure, it means everything is Ok!</p>
                 <img src="/image/hml/screenshot-20180319001.jpg" alt="screenshot-20180319001.jpg" class="img-responsive img-rounded"><br>
                 <div class="panel panel-info">
                     <div class="panel-heading"><h3 class="panel-title">Note for users of Windows</h3></div>
                     <div class="panel-body">Users may need to configure environment variable of SDCC manually!</div>
                 </div>
-                <p>Besides, we recomand use GNU Make to help generate target file. There is a file named "Makefile" under <i>user</i> directory in advance.</p>
+                <p>Besides, we recomand use GNU Make to help generate target file. There is a file named "Makefile" under <i>usr</i> directory in advance.</p>
 
                 <h3 class="step-title">STEP-2 <small class="h3-secondary-text">get started with HML_FwLib_8051</small></h3>
                 <p>At the beginning of this step, you need to know the file structure of HML_FwLib_8051.</p>
@@ -216,15 +216,15 @@
                         <div>
                             <p style="font-family: Consola">
                                 HML_FwLib_8051<br>
-                                ├── doc<br>
-                                ├── inc<br>
-                                ├── obj<br>
-                                ├── sample<br>
-                                ├── src<br>
-                                └── user<br>
+                                ├─doc<br>
+                                ├─example<br>
+                                ├─inc<br>
+                                ├─obj<br>
+                                ├─src<br>
+                                └─usr<br>
                             </p>
                         </div>
-                        <div>The tree shows the structment of HML_FwLib_8051,it includes inc, obj, sample, src and user folders. Details about them are shown in the following form.</div>
+                        <div>The tree shows the structment of HML_FwLib_8051, it includes doc, example, inc, obj, src and usr folders. Details about them are shown in the following form.</div>
                     </div>
                     <table class="table table-bordered table-hover table-responsive">
                         <thead>
@@ -239,23 +239,23 @@
                                 <td>store releated documents about HML_FwLib_8051</td>
                             </tr>
                             <tr>
+                                <td>example</td>
+                                <td>provide some example files with *.c format to help users learn about HML_FwLib_8051</td>
+                            </tr>
+                            <tr>
                                 <td>inc</td>
                                 <td>include all header files(*.h) of HML</td>
                             </tr>
                             <tr>
                                 <td>obj</td>
-                                <td>store all output files,incluing *.hex,*.ihx,*.lk,*.rel, during compiling</td>
-                            </tr>
-                            <tr>
-                                <td>sample</td>
-                                <td>provide some sample files with *.c format to help users learn about HML</td>
+                                <td>store all output files, incluing *.hex,*.ihx,*.lk,*.rel and othters during compiling</td>
                             </tr>
                             <tr>
                                 <td>src</td>
-                                <td>store all source files(*.c) of HML</td>
+                                <td>store all source files(*.c) of HML_FwLib_8051</td>
                             </tr>
                             <tr>
-                                <td>user</td>
+                                <td>usr</td>
                                 <td>store makefile and a source file which includes main function</td>
                             </tr>
                         </tbody>
@@ -263,20 +263,20 @@
                             <tr>
                                 <td colspan="2">
                                     #Note :<br>
-                                    &nbsp;*default name of the source file with main function in user folder is <em style="font-family: Consola">test.c</em><br>
+                                    &nbsp;*default name of the source file with main function in user folder is <i>test.c</i><br>
                                 </td>
                             </tr>
                         </tfoot>
                     </table>
                 </div>
-                <p>There are two ways to start your project with HML_FwLib_8051,they are #QuickStart and #Custom.</p>
-                <p><strong>QuickStart</strong>: you just need to modify the content of test.c and then enter the <strong>make</strong> under <i>user</i> directory as shown in the first line of the following figure, the remain work will be completed automatically by Makefile. After the compiling is finished, the message will be shown as the following figure. </p>
-                <a href="/image/hml/screenshot-20180502001.jpg"><img src="/image/hml/screenshot-20180502001.jpg" alt="screenshot-20180502001.jpg" class="img-rounded img-responsive"></a><br>
-                <p><strong>Custom</strong>: if you have enough abilities or want to do more things, you can just add <em>inc</em> and <em>src</em> folders into your project and write your own makefile.</p>
+                <p>There are two ways to start your project with HML_FwLib_8051, they are #QuickStart and #Custom.</p>
+                <p><strong>QuickStart</strong>: you just need to modify the code of <i>test.c</i> and then enter the <kbd>make</kbd> under <i>usr</i> directory as shown in the first line of the following figure, the remain work will be completed automatically by Makefile. After the compiling is finished, the message will be shown as the following figure. </p>
+                <a href="/image/hml/screenshot-20180923002.jpg"><img src="/image/hml/screenshot-20180923002.jpg" alt="screenshot-20180502001.jpg" class="img-rounded img-responsive"></a><br>
+                <p><strong>Custom</strong>: if you have enough abilities or want to do more things, you can just add <i>inc</i> and <i>src</i> folders into your project and write your own makefile.</p>
 
                 <h3 class="step-title">STEP-3 <small class="h3-secondary-text">parameters configuration</small></h3>
-                <p>There are two parameters that could be modified in the head file “macro.h”. They are <em>MCU_MODEL</em>, specifying the model of the target MCU, and <em>_FRE_OSC_</em>, specifying the clock rate of the target MCU. The supported value of these two parameters are listed on the file, and the default value of former one is <em>MCU_STC89C52RC</em>, the other is <em>11059200L.</em></p>
-                <p>Besides, the conditional compilation mechanism is introduced into the source code. In order to ensure the projects based on HML_FwLib_8051 can be downloaded into the limited space of 8051 MCUs, the developers can modify the macro definition named <em>___COMPILE_XXX___</em> in macro.h to specify which piece of code should be compiled, thus to reduce the size of the HEX file.</p>
+                <p>There are two parameters that could be modified in the head file <i>macro.h</i>. They are <code>MCU_MODEL</code>, specifying the model of the target MCU, and <code>_FRE_OSC_</code>, specifying the clock rate of the target MCU. The supported value of these two parameters are listed on the file, and the default value of former one is <code>MCU_STC89C52RC</code>, the other is <code>11059200L.</code></p>
+                <p>Besides, the conditional compilation mechanism is introduced into the source code. In order to ensure the projects based on HML_FwLib_8051 can be downloaded into the limited space of 8051 MCUs, the developers can modify the macro definition named <code>___COMPILE_XXX___</code> in <i>macro.h</i> to specify which piece of code should be compiled, thus to reduce the size of the HEX file.  If user only use GPIO module, then user just need to enable <code>___COMPILE_GPIO___</code> macro definition in <i>macro.h</i>. Some macros for conditional compilation rely on others. For example, before you define the macro definition <code>___COMPILE_UART___</code>, the macros <code>___COMPILE_EXTI___</code> and <code>___COMPILE_TIM___</code> should be defined, otherwise the compilation would be failed.</p>
             </div>
 
             <!-- developer -->

@@ -35,6 +35,10 @@ p {
     font-size: 16px;
 }
 
+.b-director {
+	font-family: Consola;
+}
+
 .btn-md {
 	color: #ffffff;
 	border: 1px solid rgba(255,255,255,0.6);
