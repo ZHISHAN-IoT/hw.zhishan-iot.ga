@@ -136,7 +136,7 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 ">
                         <div class="div-feature">
-                            <img src="/image/hml/screenshot-20180923001.jpg" style="height: 200px"></img>
+                            <img src="/image/hml/screenshot-20180921002.jpg" style="height: 200px"></img>
                             <hr>
                             <p>More readable code, no need to care about internal registers of 8051 MCU.</p>
                         </div>
@@ -166,8 +166,8 @@
                             <td>SDCC</td>
                         </tr>
                         <tr>
-                            <td>Current Version</td>
-                            <td>v0.0.5</td>
+                            <td>Debug Version / Release Version</td>
+                            <td>v0.0.5 / V0R1</td>
                         </tr>
                         <tr>
                             <td>Download Link</td>
@@ -187,7 +187,7 @@
                         </tr>
                         <tr>
                             <td>Update date</td>
-                            <td><time>2018-10-04</time></td>
+                            <td><time datetime="2018-10-12">2018-10-12</time></td>
                         </tr>
                     </tbody>
                 </table>
@@ -275,7 +275,7 @@
                 <p><strong>Custom</strong>: if you have enough abilities or want to do more things, you can just add <i>inc</i> and <i>src</i> folders into your project and write your own makefile.</p>
 
                 <h3 class="step-title">STEP-3 <small class="h3-secondary-text">parameters configuration</small></h3>
-                <p>There are two parameters that could be modified in the head file <i>macro.h</i>. They are <code>MCU_MODEL</code>, specifying the model of the target MCU, and <code>_FRE_OSC_</code>, specifying the clock rate of the target MCU. The supported value of these two parameters are listed on the file, and the default value of former one is <code>MCU_STC89C52RC</code>, the other is <code>11059200L.</code></p>
+                <p>There is a parameter that need to be modified manually in the head file <i>macro.h</i>. It's <code>_FRE_OSC_</code>, specifying the clock rate of the target MCU. The supported value of these two parameters are listed on the file, and the default value is <code>11059200L.</code></p>
                 <p>Besides, the conditional compilation mechanism is introduced into the source code. In order to ensure the projects based on HML_FwLib_8051 can be downloaded into the limited space of 8051 MCUs, the developers can modify the macro definition named <code>___COMPILE_XXX___</code> in <i>macro.h</i> to specify which piece of code should be compiled, thus to reduce the size of the HEX file.  If user only use GPIO module, then user just need to enable <code>___COMPILE_GPIO___</code> macro definition in <i>macro.h</i>. Some macros for conditional compilation rely on others. For example, before you define the macro definition <code>___COMPILE_UART___</code>, the macros <code>___COMPILE_EXTI___</code> and <code>___COMPILE_TIM___</code> should be defined, otherwise the compilation would be failed.</p>
             </div>
 
