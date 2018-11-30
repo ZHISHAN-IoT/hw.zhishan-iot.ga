@@ -167,7 +167,7 @@
                         </tr>
                         <tr>
                             <td>Debug Version / Release Version</td>
-                            <td>v0.0.5 / V0R1</td>
+                            <td>v0.0.6 / V0R1</td>
                         </tr>
                         <tr>
                             <td>Download Link</td>
@@ -187,7 +187,7 @@
                         </tr>
                         <tr>
                             <td>Update date</td>
-                            <td><time datetime="2018-10-12">2018-10-12</time></td>
+                            <td><time datetime="2018-11-30">2018-11-30</time></td>
                         </tr>
                     </tbody>
                 </table>
@@ -206,12 +206,12 @@
                     <div class="panel-heading"><h3 class="panel-title">Note for users of Windows</h3></div>
                     <div class="panel-body">Users may need to configure environment variable of SDCC manually!</div>
                 </div>
-                <p>Besides, we recomand use GNU Make to help generate target file. There is a file named "Makefile" under <i>usr</i> directory in advance.</p>
+                <p>Besides, we recomand use <a href="http://www.gnu.org/software/make/manual/make.html">GNU Make</a> to help generate target file. There is a file named "Makefile" under <i>usr</i> directory in advance.</p>
 
                 <h3 class="step-title">STEP-2 <small class="h3-secondary-text">get started with HML_FwLib_8051</small></h3>
-                <p>At the beginning of this step, you need to know the file structure of HML_FwLib_8051.</p>
+                <p>At the beginning of this step, you need to know the source organization of HML_FwLib_8051.</p>
                 <div class="panel panel-default">
-                    <div class="panel-heading"><span class="glyphicon glyphicon-folder-open" aria-hidden="true" style="margin-right: 10px"></span>File structment of HML_FwLib_8051</div>
+                    <div class="panel-heading"><span class="glyphicon glyphicon-folder-open" aria-hidden="true" style="margin-right: 10px"></span>Source organization of HML_FwLib_8051</div>
                     <div class="panel-body">
                         <div>
                             <p style="font-family: Consola">
@@ -224,7 +224,7 @@
                                 └─usr<br>
                             </p>
                         </div>
-                        <div>The tree shows the structment of HML_FwLib_8051, it includes doc, example, inc, obj, src and usr folders. Details about them are shown in the following form.</div>
+                        <div>The tree shows the organization of HML_FwLib_8051, it includes doc, example, inc, obj, src and usr folders. Details about them are shown in the following form.</div>
                     </div>
                     <table class="table table-bordered table-hover table-responsive">
                         <thead>
@@ -248,7 +248,7 @@
                             </tr>
                             <tr>
                                 <td>obj</td>
-                                <td>store all output files, incluing *.hex,*.ihx,*.lk,*.rel and othters during compiling</td>
+                                <td>store all output files, incluing *.hex,*.ihx,*.lk,*.rel and othters during compilation</td>
                             </tr>
                             <tr>
                                 <td>src</td>
@@ -270,7 +270,7 @@
                     </table>
                 </div>
                 <p>There are two ways to start your project with HML_FwLib_8051, they are #QuickStart and #Custom.</p>
-                <p><strong>QuickStart</strong>: you just need to modify the code of <i>test.c</i> and then enter the <kbd>make</kbd> under <i>usr</i> directory as shown in the first line of the following figure, the remain work will be completed automatically by Makefile. After the compiling is finished, the message will be shown as the following figure. </p>
+                <p><strong>QuickStart</strong>: you just need to modify the code of <i>test.c</i> and then enter the <kbd>make</kbd> under <i>usr</i> directory as shown in the first line of the following figure, the remain work will be completed automatically by Makefile. After the compilation is finished, the message will be shown as the following figure. </p>
                 <a href="/image/hml/screenshot-20181009001.jpg"><img src="/image/hml/screenshot-20181009001.jpg" alt="screenshot-20180502001.jpg" class="img-rounded img-responsive"></a><br>
                 <p><strong>Custom</strong>: if you have enough abilities or want to do more things, you can just add <i>inc</i> and <i>src</i> folders into your project and write your own makefile.</p>
 
