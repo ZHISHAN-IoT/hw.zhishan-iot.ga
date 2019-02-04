@@ -175,7 +175,7 @@
                         </tr>
                         <tr>
                             <td>Debug Version / Release Version</td>
-                            <td>v0.0.0 / V0R1</td>
+                            <td>v0.0.1 / V0R2</td>
                         </tr>
                         <tr>
                             <td>Download Link</td>
@@ -195,7 +195,7 @@
                         </tr>
                         <tr>
                             <td>Update date</td>
-                            <td><time datetime="2018-12-30">2018-12-30</time></td>
+                            <td><time datetime="2019-02-04">2018-02-04</time></td>
                         </tr>
                     </tbody>
                 </table>
@@ -279,12 +279,12 @@
                     </table>
                 </div>
                 <p>There are two ways to start your project with HML_FwLib_STC10, they are #QuickStart and #Custom.</p>
-                <p><strong>QuickStart</strong>: you just need to modify the content of <i>test.c</i> and then enter the <kbd>make</kbd> under <i>usr</i> directory as shown in the first line of the following figure, the remain work will be completed automatically by Makefile. After the compilation is finished, the message will be shown as the following figure. </p>
-                <a href="/image/hml/screenshot-20181130002.jpg"><img src="/image/hml/screenshot-20181130002.jpg" alt="screenshot-20181130002.jpg" class="img-rounded img-responsive"></a><br>
+                <p><strong>QuickStart</strong>: you just need to modify the code of <i>test.c</i> and then enter the command <kbd>make</kbd> under <i>usr</i> directory as shown in the first line of the following figure, the remain work will be completed automatically by Makefile. You can enter command <kbd>make help</kbd> to get all usages about this Makefile(only for v0.1.0 or later version Makefile). After the compilation finished, the message will be shown as the following figure. </p>
+                <a href="/image/hml/screenshot-20190204002.jpg"><img src="/image/hml/screenshot-20190204002.jpg" alt="screenshot-20190204002.jpg" class="img-rounded img-responsive"></a><br>
                 <p><strong>Custom</strong>: If you have enough abilities or want to do more things, you can just add <i>inc</i> and <i>src</i> folders into your project and write your own makefile.</p>
 
                 <h3 class="step-title">STEP-3 <small class="h3-secondary-text">parameters configuration</small></h3>
-                <p>There are two parameters that could be modified in the head file <i>macro.h</i>. They are <code>_MCU_MODEL_</code>, specifying the model of the target MCU, and <code>_FRE_OSC_</code>, specifying the clock frequency of the target MCU. The supported value of these two parameters are listed on the file, and the default value of former one is <code>_MCU_STC10F02XE_</code>, the other is <code>11059200L.</code></p>
+                <p>There are two parameters that could be modified in the head file <i>macro.h</i>. They are <code>_MCU_MODEL_</code>, specifying the model of the target MCU, and <code>_FRE_OSC_</code>, specifying the clock frequency of the target MCU. The supported value of these two parameters are listed on the file, and the default value of former one is <code>_MCU_STC10F02XE_</code>, the other is <code>11059200L</code>.</p>
                 <p>The conditional compilation mechanism is introduced into the source code. In order to ensure the projects based on HML_FwLib_STC10 can be downloaded into the limited on-chip flash space of STC10 MCUs, the developers can modify the macro definition named <code>___COMPILE_XXX___</code> in <i>macro.h</i> to specify which piece of code should be compiled, thus to reduce the size of the HEX file. If user only use GPIO module, then user just need to enable <code>___COMPILE_GPIO___</code> macro definition in <i>macro.h</i>. Some macros for conditional compilation rely on others. For example, before you enable the macro definition <code>___COMPILE_UART___</code>, the macros <code>___COMPILE_EXTI___</code> and <code>___COMPILE_TIM___</code> should be defined, otherwise the compilation would be failed.</p>
 
             </div>
@@ -322,7 +322,7 @@
         <footer class="container-fluid foot-wrap footer-wrap-plus">
             <p class="footer-content" style="text-align: center">
                 Code with <span class="glyphicon glyphicon-heart" style="color:#FF0033" aria-hidden="true"></span> in <a href="https://en.wikipedia.org/wiki/Zhangzhou" style="color: #DDD"><i>Chiangchow</i></a><br>
-                Copyright &copy;2018 ZHISHAN-IoT | Webmaster:<a href="mailto:webmaster@zhishan-iot.tk" style="color:#DDD">webmaster@zhishan-iot.tk</a>
+                Copyright &copy;2018-2019 ZHISHAN-IoT | Webmaster:<a href="mailto:webmaster@zhishan-iot.tk" style="color:#DDD">webmaster@zhishan-iot.tk</a>
             </p>
         </footer>
 
