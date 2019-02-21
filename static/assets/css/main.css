@@ -319,10 +319,10 @@ img {
         -o-transform: translateY(0);
     }
 }
-* {
+/* * {
     padding: 0;
     margin: 0;
-}
+} */
 html, body {
     font-size: 100%;
     height: 100%;
@@ -333,7 +333,6 @@ body {
     font-weight: 400;
     font-size: 16px;
     min-width: 960px;
-    background-color: #f3f3f3;
 }
 a {
     text-decoration: none;
@@ -366,7 +365,7 @@ a:hover {
 .not-active:hover {
     color: #999;
 }
-.container {
+.container-1 {
     max-width: 1280px;
     margin: 80px auto;
     width: 100%;
@@ -462,7 +461,7 @@ div[class*="span"] {
 /* THE MISCELLANEOUS
 -------------------------------------------------- */
 
-#container {
+#container-1 {
     min-height: 100%;
     height: auto !important;
     height: 100%;
@@ -1110,9 +1109,9 @@ section.clients-container {
     padding: 10px 0 60px 0;
     background: #fff;
 }
-section.clients-container .container {
+/* section.clients-container .container {
     margin: 0 auto;
-}
+} */
 section.clients-container div.featured-desc {
     width: 500px;
     margin: 40px auto 40px auto;
@@ -4320,9 +4319,9 @@ body.modal-open {
   .navbar-header {
     padding: 0 1.5rem;
   }
-  .page-insights section.container {
+/*  .page-insights section.container {
     margin-bottom: 2rem;
-  }
+  } */
   .page-insights .intro {
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -4495,12 +4494,12 @@ body.modal-open {
 #form-brief #landing {
     display: flex;
 }
-#form-brief .container {
+/* #form-brief .container {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
     overflow: visible;
-}
+} */
 #form-brief .form-row {
     padding: 0;
 }
