@@ -1,7 +1,7 @@
 <!--
   @Author:wlf(at)zhishan-iot.tk
   -->
-
+<!DOCTYPE html>
 <html>
 
 	<head>
@@ -73,7 +73,7 @@
 									<div class="nav">
 										<!-- <a href="#">More</a> -->
 										<div class="btn-group">
-											<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</a>
+											<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
 											<ul class="dropdown-menu">
 												<li><a href="/index.html">Hardware</a></li>
 												<li><a href="/page/hml/index.html">Hardware - HML</a></li>
@@ -275,8 +275,32 @@
         <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
         <script src="https://cdn.bootcss.com/scrollup/2.4.1/jquery.scrollUp.min.js"></script>
+		<script type="text/javascript" src="../../static/assets/js/jquery.js"></script>
+		<script type="text/javascript" src="../../static/assets/js/jquery.qrcode.js"></script>
+		<script type="text/javascript" src="../../static/assets/js/plugins-all.js"></script>
+		<script type="text/javascript" src="../../static/assets/js/fancybox/jquery.fancybox.js"></script>
+		<script type="text/javascript" src="../../static/assets/js/main.js"></script>
 		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
         
+		<script>
+			if (page == 'leadership') {
+				window.onbeforeunload = function(e) {
+					e = e || window.event;
+					if (e) {
+						var pos = Math.round(((window.pageYOffset + document.documentElement.clientHeight) / document.getElementsByTagName(
+							'body')[0].clientHeight) * 100) / 100;
+						var group = "< 40%";
+						if (pos >= 0.7) {
+							group = "> 70%";
+						} else if (pos >= 0.4) {
+							group = "40% - 70%";
+						}
+						ga('send', 'event', 'Leadership - position', 'Exit position', group);
+					}
+				}
+			}
+		</script>
+		
         <script>
             $(function(){
                 $.scrollUp({
