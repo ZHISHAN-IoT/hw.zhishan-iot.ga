@@ -68,7 +68,7 @@ div.slider-text {
 }
 
 .flexslider .tagline .inner .red {
-  font-size: calc(9.04762vw * .75);
+  font-size: calc(9.04762vw * .55);
   font-weight: 600;
   line-height: 1.08654;
   color: #ea3333;
@@ -97,7 +97,7 @@ div.slider-text {
     font-size: 1rem;
   }
   .flexslider .tagline .inner .red {
-    font-size: 10vw;
+    font-size: 8vw;
   }
 }
 
